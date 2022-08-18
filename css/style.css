@@ -1,0 +1,34 @@
+@import "/css/normalize.css";
+
+:root {
+    /*Primary colors*/
+    --color-dark-cyan: hsl(184, 100%, 22%);
+    --color-orange: hsl(31, 77%, 52%);
+    --color-very-dark-cyan: hsl(179, 100%, 13%);
+
+    /*Neutral colors*/
+    --color-transparent: hsla(0, 0%, 100%, 0.75); /*Paragraphs*/
+    --color-light-gray: hsl(0, 0%, 95%); /*Background, headings, buttons*/
+}
+
+/*CSS reset*/
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+}
+
+/*Removing the blue highlight of button on mobile*/
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
