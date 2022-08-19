@@ -63,20 +63,27 @@ h2 {
     margin: 0;
 }
 
+p {
+    margin: 0;
+}
+
 /*Links*/
 
 .link {
-    background-color: var(--color-light-gray);
-    border-radius: 25px;
-    border: 2px solid var(--color-light-gray);
     display: inline-block;
-    padding: 0.9rem 2.95rem 1rem 2.95rem;
     text-decoration: none;
     transition: all 500ms;
 }
 
-.link:hover, 
-.link:focus {
+.link--learn-more {
+    background-color: var(--color-light-gray);
+    border-radius: 25px;
+    border: 2px solid var(--color-light-gray);
+    padding: 0.9rem 2.95rem 1rem 2.95rem;
+}
+
+.link--learn-more:hover, 
+.link--learn-more:focus {
     background-color: transparent;
     color: var(--color-light-gray);
 }
@@ -93,16 +100,22 @@ h2 {
     color: var(--color-very-dark-cyan);
 }
 
-/*cards*/
+/*Cards*/
 
 .card {
     border-radius: 7px;
-    padding: 4.8rem;
     max-width: 327px;
+    padding: 4.8rem;
+}
+
+.card--middle {
+    border-radius: 0;
 }
 
 .card--orange {
     background-color: var(--color-orange);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .card--dark-cyan {
@@ -111,18 +124,82 @@ h2 {
 
 .card--very-dark-cyan {
     background-color: var(--color-very-dark-cyan);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 .card__icon {
-    width: 64px;
     height: 40px;
+    width: 64px;
 }
 
 .card__heading {
-    margin-top: 1rem;
+    margin: 2rem 0;
     text-transform: uppercase;
 }
 
 .card__link {
-    margin-top: 1rem;
+    margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 1440px) {
+    .card--orange {
+        border-bottom-left-radius: 7px;
+        border-top-right-radius: 0;
+    }
+
+    .card--very-dark-cyan {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 7px;
+    }
+
+    .card__link {
+        margin-top: 8.3rem;
+    }
+}
+
+/*Card section*/
+
+.block {
+    padding: 8.8rem 2.4rem;
+}
+
+.cards {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1440px) {
+    .cards {
+        flex-direction: row;
+    }
+
+    .block {
+        padding: 17.1rem 26rem;
+    }
+}
+
+/*Footer*/
+
+.footer {
+    background: linear-gradient(to left, var(--color-orange), var(--color-dark-cyan), var(--color-very-dark-cyan));
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer__p {
+    margin: 1rem;
+}
+
+.footer__link {
+    color: lightyellow;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 1.8rem;
+}
+
+.footer__link:hover, 
+.footer__link:focus {
+    color: yellow;
 }
