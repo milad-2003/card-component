@@ -11,6 +11,12 @@
     --color-light-gray: hsl(0, 0%, 95%); /*Background, headings, buttons*/
 }
 
+/*Making calculations easier with rem*/
+
+html {
+    font-size: 62.5%;
+}
+
 /*CSS reset*/
 
 *,
@@ -32,3 +38,26 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+/*Typography*/
+
+/*
+CSS rules to specify families
+
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+*/
+
+body {
+    font-size: 1.5rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: var(--color-transparent);
+    line-height: 1.66;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 4rem;
+    color: var(--color-light-gray);
+}
