@@ -60,6 +60,7 @@ h2 {
     font-family: 'Big Shoulders Display', cursive;
     font-size: 4rem;
     font-weight: 700;
+    margin: 0;
 }
 
 /*Links*/
@@ -69,7 +70,7 @@ h2 {
     border-radius: 25px;
     border: 2px solid var(--color-light-gray);
     display: inline-block;
-    padding: 1rem 3.05rem 1.1rem 3.05rem;
+    padding: 0.9rem 2.95rem 1rem 2.95rem;
     text-decoration: none;
     transition: all 500ms;
 }
@@ -90,4 +91,38 @@ h2 {
 
 .link--very-dark-cyan {
     color: var(--color-very-dark-cyan);
+}
+
+/*cards*/
+
+.card {
+    border-radius: 7px;
+    padding: 4.8rem;
+    max-width: 327px;
+}
+
+.card--orange {
+    background-color: var(--color-orange);
+}
+
+.card--dark-cyan {
+    background-color: var(--color-dark-cyan);
+}
+
+.card--very-dark-cyan {
+    background-color: var(--color-very-dark-cyan);
+}
+
+.card__icon {
+    width: 64px;
+    height: 40px;
+}
+
+.card__heading {
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+.card__link {
+    margin-top: 1rem;
 }
